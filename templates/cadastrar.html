@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+
+{% block menu_lateral %}
+<title>Cadastrar</title>
+<link rel="stylesheet" href="/static/cadastrar.css">
+
+</head>
+
+<main>
+    
+    
+    <section class="sec_form">
+
+        <form class="app_form" action="cadastrar_sql" method="POST" enctype="multipart/form-data">
+
+            <section class="area_img">
+                <div class="area_group">
+                    FOTO TAG
+                    <input name="img_tag" type="file" enctype="multipart/form-data" >
+                </div>    
+                <div class="area_group">
+                    FOTO ETIQUETA
+                    <input name="img_etiqueta" type="file" >
+                </div> 
+                <div class="area_group">
+                    FOTO 1 MAQUINA 
+                    <input name="img_maquina1"  type="file" >
+                </div> 
+                <div class="area_group">
+                    FOTO 2 MAQUINA
+                    <input name="img_maquina2" type="file" >
+                </div> 
+            </section>
+            
+            <div class="form_goup">
+                <input class="cad_number" type="number" name="cad_tag"  minlength="8" maxlength="8"  pattern="[]" autocomplete="off" required>
+                <span>TAG</span>
+            </div>
+        
+            <div class="form_goup">
+                <input  name="cad_rg" minlength="4"   type="text" autocomplete="off" required>
+                <span>RG</span>
+            </div>
+            
+            <div class="form_goup" id="drop_sta">
+                <input minlength="4" name="cad_sta" type="text" autocomplete="organization-title" required>
+                <span>STA</span>
+            </div>
+            
+            <div class="form_goup">
+                <input class="cad_number" type="number" name="cad_voltagem"  autocomplete="off" required>
+                <span>VOLTAGEM</span>
+            </div>
+        
+            <div class="form_goup">
+                <input class="cad_number" type="number" name="cad_largura"  autocomplete="off" required>
+                <span>LARGURA EM CM</span>
+            </div>
+
+            <div class="form_goup">
+                <input class="cad_number" type="number" name="cad_altura"  autocomplete="off" required>
+                <span>ALTURA EM CM</span>
+            </div>
+
+            <div class="form_goup">
+                <input class="cad_number" type="number" name="cad_comprimento"  autocomplete="off" required>
+                <span>COMPRIMENTO EM CM</span>
+            </div>
+
+            <div class="form_goup">
+                <input class="cad_number" type="number"  name="cad_capacidade"  autocomplete="off" required>
+                <span>CAPACIDADE EM LITROS</span>
+            </div>
+            
+            <div class="form_goup">
+                <input name="cad_modelo" type="text" autocomplete="organization" required>
+                <span>MODELO</span>
+            </div>
+        
+            <button>Cadastrar</button>
+        </form>
+ 
+    </section>
+
+</main>
+
+{% endblock %}

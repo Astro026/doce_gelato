@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+<title>Doce Gelato</title>
+{% block menu_lateral %}
+<title>Doce Gelato</title>
+<link rel="stylesheet" href="/static/home.css">
+</head>
+<body>
+    <main>
+        <div class="menu_pesquisa">
+            <div class="titulo_menu">Filtrar por</div>
+            <form action="buscar" method="POST" class="app_form" >
+                <div class="campo_pesquisa">
+                    
+                    <div class="form_group">    
+                        <span>STA</span>
+                        <input class="sta" name="sta" type="text" placeholder="">
+                    </div>
+
+                    <div class="form_group">    
+                        <span>MODELO</span>
+                        <input  name="modelo" type="text" placeholder="">
+                    </div>
+
+                    <div class="form_group">
+                        <span>TAG</span>
+                        <input name="tag" type="text" placeholder="">
+                    </div>
+
+                    <div class="form_group">
+                        <span>RG</span>
+                        <input name="rg" type="text" placeholder="">
+                    </div>
+                    
+                    <input id="btn_buscar" type="submit" value="Buscar">
+                </div>
+            </form>
+        </div>
+        
+        <section class="area_maquinas" name="area_maquinas">
+             
+            <section class="box_area">
+                {% for maqui in maquinas %}
+                    <form action="maquina", method="post" class="form_lista">
+                    <span> <input type="submit"  value="{{maqui[1]}}"  name="{{maqui[1]}}"></span> 
+                        <span>{{maqui[2]}}</span>
+                        <span>{{maqui[3]}}</span> 
+                    </form>
+                {% endfor %}
+            </section>
+            <h1></h1>
+        </section>
+    </main>
+</body>    
+{% endblock %}

@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body{
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+main{
+    padding-left: 10%;
+    padding-top: 5%;
+    font-family: "Montserrat", sans-serif;
+    width: 90%;
+    background-color: rgba(255, 99, 71, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 165px;
+
+}
+.campo_pesquisa{
+    width: 100%;
+    padding: 20px;
+    background-color: #242741;
+    max-width: 1000px;
+    display: block;
+    columns: 2;
+    border-radius: 20px;
+}
+
+
+.form_group{
+    margin-bottom: 2rem;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+
+
+.app_form input{
+    width: 100%;
+    height: 25px;
+    font-size: 16px;
+    padding-left: 8px;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #cccccc00;
+}
+
+
+#btn_buscar{
+    width: 50%;
+    margin-left: 25%;
+    color: white;
+    background-color: #121422;
+}
+
+.titulo_menu{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-left: 7%;
+}
+
+
+.area_maquinas{
+    background-color: rgba(157, 145, 145, 0);
+    width: 100%;    
+    display: flex;
+
+    margin-right: 12%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.box_area{
+    background-color: rgba(92, 2, 2, 0);
+    display: box;
+
+    font-size: 1rem;
+    width: 50%;
+    padding: 10px;
+}
+
+.form_lista{
+    border: 1px solid;
+    margin: 5px;
+
+    
+    background-color: #242741;
+
+}
+.form_lista li{
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+
+    margin-left: 10%;
+}
+.form_lista input{
+    color: white;
+    background-color: #0a0f35;
+    margin-bottom: 5px;
+    text-align: center;
+   
+    height: 20px;
+    font-size: 16px;
+    padding-left: 8px;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+
+}

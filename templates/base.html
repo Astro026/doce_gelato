@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/sty_base.css">
+    
+</head>
+<body>
+    
+    <nav class="nav">
+        <a href="home"><img class="logo_menu" src="/static/img/logo_menu_lateral.png" alt=""></a>
+        <a href="home" class="nav_text" id="nav_iten1">Pagina Inicial</a>
+        <a href="cadastrar{{senha}}" class="nav_text">Cadastrar Maquina</a>
+        <a href="mostrar" class="nav_text">Historico de Envios</a> <br>
+        <a href="mostrar" class="nav_text">Enviar Maquina</a> <br>
+        
+        <a href="/" class="nav_text" id="nav_itenultimo" > Sair </a>
+    </nav>
+        {% block menu_lateral %}
+        {% endblock %}
+
+  
+</body>
+</html>
+<script defer src= '/static/script.js'></script>

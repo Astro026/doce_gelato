@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor O.S</title>
+    <script src="/main.py" defer></script>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <img class="logo" src="/static/img/logo.png" alt="aaaaaaaaaaaaaaaaaa">
+    <main>
+        <div class="texto_orientação">Forneça o Usuário e Senha <br> ou <br> entre em contato com o <a href="">suporte</a></div>
+
+        <div class="menu_login">
+            
+            <div class="titulo_menu">Login</div>
+            <div class="">
+                <form action="autenticar" class="btn_menu" method="post">
+                    <div class="input_text">
+                        Usuário <br>
+                        <input required  type="text"  name="login" id="login" value="{{login}}"> <br>
+                        Senha <br>
+                        <input required type="password"  name="senha" id="senha" value="{{senha}}"> <br>
+                    </div>
+                    <input type="submit" value="Entrar" class="btn_entrar" > 
+                </form> 
+            
+                <span class="msg_invalida">{{msg}} </span>
+        </div>
+        </div>
+    </main>
+    </body>
+</html>

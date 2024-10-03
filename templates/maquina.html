@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block menu_lateral %}
+    <title>Maquina - {{maquina_selecionada[0][1]}}</title>
+    <link rel="stylesheet" href="/static/maquina.css">
+<main>
+    <section>
+        <h1> MAQUINA {{maquina_selecionada[0][1]}}</h1>
+        <div class="text_area">
+            TAG DA MAQUINA {{maquina_selecionada[0][1]}} <br>
+            RG DA MAQUINA {{maquina_selecionada[0][2]}} <br>
+            STA DA MAQUINA {{maquina_selecionada[0][3]}} <br>
+            VOLTAGEM DA MAQUINA {{maquina_selecionada[0][4]}}
+        </div>
+        <div class="img_area">
+            <img src="" alt="">
+        </div>
+    </section>
+</main>
+
+{% endblock %}
+</html>

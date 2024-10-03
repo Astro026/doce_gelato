@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+main{
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    background-color: rgba(255, 55, 20, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 13%;
+    padding-top: 10%;
+}
+
+.sec_form{
+    margin-top: 10%;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(165, 42, 42, 0);
+    max-width: 1000px;
+    display: block;
+    columns: 3;
+}
+
+
+.form_goup{
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+
+.app_form input{
+  
+    width: 100%;
+    height: 25px;
+    font-size: 16px;
+    padding-left: 8px;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    
+}
+
+.app_form textarea{
+    width: 100%;
+    outline: none;
+    resize: none;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.app_form button{
+    width: 100%;
+    height: 25px;
+    border-radius: 6px;
+    border: 1px solid #242741;
+    background-color: #242741;
+    color: white;
+    transition: background-color .3s ease;
+    cursor: pointer;
+}
+
+.app_form button:hover{
+    background-color: #1a1c30;
+}
+
+.app_form span{
+    position: absolute;
+    left: 5px;
+    top:7px;
+    pointer-events: none;   
+    transition: .5s;
+    opacity:  .5; 
+}
+
+.app_form input:focus ~ span, 
+.app_form textarea:focus ~ span,
+.app_form input:valid ~ span,
+.app_form textarea:valid ~ span{
+    transform: translateY(-30px);
+    font-size: 14px;
+    opacity: 1;
+    color: white;
+}
+
+
+
+.area_img{
+    
+    background-color: rgba(0, 0, 0, 0);
+    padding: 20px;
+    
+    width: 70%;
+    max-width: 970px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 80%;
+}
+
+
+.area_img span{
+    background-color: aliceblue;
+    
+}
+.area_group{
+    text-align: center;
+    color: white;
+}
+
+.area_img input{
+    font-size: 12px;
+    width: 80%;
+    height: 25px;
+    border-radius: 6px;
+    border: 1px solid #242741;
+    background-color: #242741;
+    color: white;
+    transition: background-color .1s ease-out;
+    cursor: pointer;
+        
+}
+
+
+.area_img input:hover{
+    background-color: #1a1c30;
+}
+
+
+/*tratmentos de dados*/
+.cad_number::-webkit-outer-spin-button,
+.cad_number::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;    
+}
