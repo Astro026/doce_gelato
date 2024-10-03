@@ -121,10 +121,7 @@ def maquina():
 @app.route('/buscar', methods = ['POST'])
 def buscar():
     global flag_log, gb_sta, gb_modelo, gb_tag, gb_rg, gb_usuario
-    print(f'-----------{request.form.get('sta')}----------------')
-    print(f'-----------{request.form.get('modelo')}----------------')
-    print(f'-----------{request.form.get('tag')}----------------')
-    print(f'-----------{request.form.get('rg')}----------------')
+    
     gb_sta = request.form.get('sta')
     gb_rg = request.form.get('rg')
     gb_modelo = request.form.get('modelo')
