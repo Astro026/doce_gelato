@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 
 #Diretorio banco de imagens 
-diretorio = 'C:\\Users\\davir\\OneDrive\\Área de Trabalho\\Gestão O.S\\banco de fotos\\'
+diretorio = f'{os.getcwd()}\\banco de fotos\\'
     
 #banco de dados
 
@@ -240,11 +240,12 @@ def cadastrar_sql():#Cadastro de maquina. (Fotos(criação de pagina e dowload d
                     foto_maquina2 = request.files.get('img_maquina2')
                     
                     #Criando pasta com nome da tag
-                    pasta_alvo = f'past_{tag}/'
+                    pasta_alvo = f'past_{tag}\\'
                     if(not os.path.exists(diretorio+pasta_alvo)): #Caso a pasta não exista ela é criada e salva as imagens
                         os.makedirs(diretorio+pasta_alvo)
                         diretorio_banco = diretorio+pasta_alvo
                         print(f'DIRETORIO BANCO = {diretorio_banco} --------------------------')
+
 
                         #Verificar se realmnte é uma foto
                         nome_foto_tag = foto_tag.filename
